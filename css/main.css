@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: var(--font-family-sans-serif);
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #772953;
+    --pink: #e83e8c;
+    --red: #df382c;
+    --orange: #e95420;
+    --yellow: #f57c00;
+    --green: #38b44a;
+    --pxnkey :  #ffdbdb;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #333;
+    --primary: #e95420;
+    --secondary: #aea79f;
+    --success: #38b44a;
+    --info: #17a2b8;
+    --warning: #f57c00;
+    --danger: #df382c;
+    --light: #e9ecef;
+    --dark: #772953;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+body{
+    background: var(--pxnkey);
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(0deg,rgba(205,86,0,1) 0%,rgba(252,107,2,1) 100%);
+}
+.logo img{
+    width: 130px;
+}
+.bar a{
+    color: var(--white);
+    margin: 0 1rem;
+    transition: .3s;
+}
+.bar a i {
+    font-size: 20px;
+}
+.bar a:hover{
+    color: var(--yellow);
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-header img{
+    margin: 5rem 0;
+    border-radius: 10px;
+}
+.section-service {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.section-service .box-service img {
+    width: 260px;
+    margin: -2rem 1rem;
+    transition: .3s;
+}
+.section-service .box-service img:hover {
+    transform: translateY(-15px);
+}
+
+.section-stock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-stock{
+    background: var(--white);
+    border-radius: 10px;
+    margin: 5rem 1rem;
+    width: 260px;
+    height: 200px;
+    border: 10px solid var(--yellow);
+    color: var(--yellow);
+}
+.box-stock .logo-stock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-stock .logo-stock h1{
+    margin-top: 1rem;
+}
+.box-stock .logo-stock h1 i{
+    font-size: 50px;
+}
+.box-stock .logo-stock img {
+    margin: 1rem 0;
+    width: 50px;
+}
+.quantity{
+    display: flex;
+    justify-content: center;
+}
+.quantity h2{
+    font-weight: 900;
+}
+.pan-stock h4{
+    font-weight: 100;
+    text-align: center;
+    color: var(--gray-dark);
+}
+
+.center-recom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-recom{
+    width: 1140px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recom-top h1{
+    font-weight: 900;
+    font-family: 'Lilita One', cursive;
+    color: var(--warning);
+}
+.recom-top h3{
+    font-weight: 100;
+    margin: 1rem 0;
+}
+.recom-but{
+    display: flex;
+    justify-content: start;
+}
+.recom-but a{
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--warning);
+    color: var(--white);
+}
+
+.section-top-iteam{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.top-top{
+    display: flex;
+    justify-content: center;
+}
+.top-but{
+    display: flex;
+    justify-content: center;
+}
+.box-iteam{
+    background: var(--warning);
+    border: 7px solid var(--warning);
+    margin: 1rem 1rem;
+    border-radius: 7px;
+    width: 560px;
+    height: 300px;
+    overflow: hidden;
+    transition: .3s;
+}
+.box-iteam:hover{
+    transform: translateY(-15px);
+}
+.box-iteam .img-iteam img{
+    width: 100%;
+    height: 200px;
+}
+.box-iteam .pan-iteam h4{
+    margin: 10px 1rem;
+    color: var(--white);
+}
+
+.center-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-now {
+    margin: 1rem 0;
+    width: 1140px;
+    height: 80px;
+    display: block;
+}
+.section-now h1{
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+    color: var(--warning);
+}
+
+.section-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-new {
+    width: 300px;
+    height: 460px;
+    margin: 2rem 3rem;
+    overflow: hidden;
+    border-radius: 7px;
+    transition: .3s;
+    background: var(--warning);
+    border: 7px solid var(--warning);
+}
+.box-new:hover {
+    transform: translateY(-15px);
+}
+.box-new .img-new img{
+    width: 100%;
+    height: 90%;
+}
+.box-new h2{
+    margin: 1rem 1rem;
+    color: var(--white);
+}
+.buy-new {
+    padding: 3rem 0;
+}
+.box-new a{
+    margin: 1rem 0;
+    color: var(--white);
+    width: 90%;
+    height: 40px;
+    background: none;
+    padding: 10px 7rem ;
+    border-radius: 10px;
+    border: 3px solid var(--white);
+    transition: .3s;
+}
+.box-new a:hover{
+    background: var(--white);
+    color: var(--gray-dark);
+}
+
+footer {
+    font-family: 'Lilita One', cursive;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light);
+}
